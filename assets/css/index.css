@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../font/Vazir.ttf);
+}
+html {
+    font-family: 'vazir';
+}
+.header-Container{
+    display: flex;
+}
+.left-Header ,
+.right-Header {
+    height: 5rem;
+}
+.right-Header {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.left-Header {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.hader-Title {
+    margin: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.search-Btn,
+.product-Search-Input {
+    border: solid red 2px;
+
+}
+.product-Search-Input {
+    width: 70%;
+    height: 3rem;
+    padding-right: 1rem;
+    border-left: none;
+    border-radius: 0 7px 7px 0;
+    
+}
+.product-Search-Input:focus {
+    outline: none;
+    background-color: #ebebeb;
+}
+.search-Btn {
+    width: 3rem;
+    height: 3rem;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+    background-color: #ffffff00;
+}
+
+
+.login-Singup-Container {
+    margin: 0 0 0 1rem ;
+}
+.cart-Btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    background-color: #ffffff00;
+    border: solid #ff5c5c 3px;
+}
