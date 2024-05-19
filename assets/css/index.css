@@ -7,6 +7,7 @@ html {
 }
 .header-Container{
     display: flex;
+    flex-wrap: wrap;
 }
 .left-Header ,
 .right-Header {
@@ -67,4 +68,35 @@ html {
     border-radius: 2rem;
     background-color: #ffffff00;
     border: solid #ff5c5c 3px;
+}
+.header-menu-container {
+  display: flex;
+}
+.menu-Lines {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    margin: 0 2rem .3rem 0;
+}
+.menu-Title {
+    margin: 0 1rem 0 2rem;
+}
+.header-List-Container {
+   width: 60%;
+    height: 3rem;
+
+}
+.header-List-Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+
+    
+    
+}
+.header-List-Item {
+    margin-right: 1.5rem;
+    /* padding: .2rem 0 .2rem 0; */
 }
