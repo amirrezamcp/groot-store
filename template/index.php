@@ -1,3 +1,6 @@
+<?php
+    include_once "../config/constants.php";
+?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -5,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groot Store</title>
+    <title><?= SITE_TITEL ?></title>
 </head>
 <body>
     <div>
