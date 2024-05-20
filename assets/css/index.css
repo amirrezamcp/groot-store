@@ -5,13 +5,19 @@
 html {
     font-family: 'vazir';
 }
-.header-Container{
+/* ححح */
+.top-Header-Container ,
+.bottom-Header-Container{
     display: flex;
     flex-wrap: wrap;
+}
+.bottom-Header-Container{
+    margin-top: 1rem;
 }
 .left-Header ,
 .right-Header {
     height: 5rem;
+    
 }
 .right-Header {
     width: 80%;
@@ -34,7 +40,7 @@ html {
 }
 .search-Btn,
 .product-Search-Input {
-    border: solid red 2px;
+    border: solid rgb(87, 46, 0) 1px;
 
 }
 .product-Search-Input {
@@ -45,9 +51,13 @@ html {
     border-radius: 0 7px 7px 0;
     
 }
-.product-Search-Input:focus {
+.product-Search-Input:focus,
+.product-Search-Input:focus + .search-Btn {
     outline: none;
     background-color: #ebebeb;
+}
+.search-Btn:hover {
+    padding: 8px;
 }
 .search-Btn {
     width: 3rem;
@@ -59,7 +69,19 @@ html {
 
 
 .login-Singup-Container {
+    width: 7rem;
+    height: 2.7rem;
     margin: 0 0 0 1rem ;
+    border: solid #000 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding: .5rem 0 0 0;
+    
+}
+.login,
+.singup {
+    text-decoration: none;
+    color: #000;
 }
 .cart-Btn {
     width: 3.5rem;
@@ -69,15 +91,25 @@ html {
     background-color: #ffffff00;
     border: solid #ff5c5c 3px;
 }
+.cart-Btn:hover {
+    width: 3.7rem;
+    height: 3.7rem;
+}
+/* ححح */
 .header-menu-container {
   display: flex;
+  margin: .5rem;
 }
 .menu-Lines {
     width: 30px;
     height: 3px;
     background-color: #000;
     border-radius: 3px;
-    margin: 0 2rem .3rem 0;
+    margin: 0 1.5rem .3rem 0;
+}
+.menu-Box:hover .menu-Line2,
+.menu-Box:hover .menu-Line3  {
+    margin-top: 7px;
 }
 .menu-Title {
     margin: 0 1rem 0 2rem;
@@ -97,6 +129,27 @@ html {
     
 }
 .header-List-Item {
-    margin-right: 1.5rem;
-    /* padding: .2rem 0 .2rem 0; */
+    margin: .5rem 2rem 0 0;
+    
+}
+.header-List-Item:hover {
+
+ 
+    transition: all .07s;
+    background-color: #eeeeeed5;
+    margin-top: 0;
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+/* ////////sait body////////// */
+
+.baner-Container {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.baner-Img {
+    border-radius: 1rem;
 }
