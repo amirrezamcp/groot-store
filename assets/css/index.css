@@ -171,35 +171,4 @@ html {
     border-radius: 10px;
 }
 
-/* ///////login//////// */
-
-#login-Singup-Modal {
-    width: 25rem;
-    height: 35rem;
-    background-color: #ebebeb;
-    margin: auto;
-}
-#login-form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.form-Title {
-    width: 20rem;
-    text-align: center;
-    margin: 2rem auto;
-
-    font-size: 2.5rem;
-
-    /* margin: auto; */
-
-}
-.input {
-
-    width: 20rem;
-    height: 3rem;
-    margin: 1rem 0;
-}
-.btn {
-    width: 15rem;
-}
+    
