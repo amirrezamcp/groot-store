@@ -1,48 +1,54 @@
+
+@font-face {
+    font-family: "vazir";
+    src: url(../font/Vazir.ttf);
+}
+html {
+    font-family: 'vazir';
+}
 #container {
-    width: 50rem;
+    width: 65rem;
     height: 30rem;
     background-color: aliceblue;
     margin: auto;
     margin-top: 5%;
     border-radius: 3rem 0 3rem 0;
 } 
-.right-section {
-    width: 50%;
+
+
+.login-Page {
+    width: 60%;
     height: 30rem;
-    border-left: solid black 3px;
-} 
-.left-section {
+    border-left: 3px black solid;
+    display: flex;
+    justify-content: center;
 
-} 
-#login-form {
 
-} 
-.username-Input {
+}
 
-} 
-.password-Input {
-
+#form-Titr {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.socialMedia-Icons-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.socialMedia-Icon-Img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 1rem 1rem;
 }
 .input {
-    width: 70%;
-    height: 2rem;
-    margin: auto;
-}
-.check-Conainer {
-
-}
-.rememberMe-Checkbox {
-
-}
-.check-Text {
+    width: 25rem;
+    height: 3rem;
 
 }
 .btn {
-
-} 
-.login-btn {
-
-}
-.cancle-btn {
-
+    width: 30%;
+    height: 2rem;
 }
