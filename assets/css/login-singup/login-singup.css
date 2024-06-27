@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../../font/Vazir.ttf);
+}
+html {
+    font-family: 'vazir';
+    background-color: bisque;
+}
+.form {
+    width: 25rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 1px rgb(0, 0, 0) solid;
+    box-shadow: 10px 10px 20px #000000;
+    backdrop-filter: blur(10px);
+}
+.form-Title {
+    width: 15rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.3rem;
+}
+.input {
+    width: 20rem;
+    height: 3rem;
+    border: 0;
+    border-bottom: #494949 1px solid;
+    background-color: #49494900;
+}
+.input:focus {
+    outline: none;
+    border-bottom: 2px #494949 solid ;
+    width: 21rem;
+}
+
+.form-Span{
+    width: 20rem;
+    text-align: right;
+    font-size: .8rem;
+}
+.span-Link {
+    color: #494949;
+    text-decoration: none;
+}
+.btn {
+    width: 9.75rem;
+    height: 2rem;
+    margin: .25rem;
+    background-color: #ffffff00;
+    outline: 0;
+    border: 1px #000 solid;
+    border-radius: 2px;
+    
+}
+.btn:hover{
+    background-color: #3f3f3f23;
+}
+.btn:focus {
+    background-color: #3f3f3f3d;
+}
+.shapes {
+    position: absolute;
+    z-index: -2;
+    border-radius: 10rem;
+}
+.shape-1 {
+    width: 13rem;
+    height: 13rem;
+    left: 25rem;
+    top: 1rem;
+    background-color: rgb(216, 141, 43);
+}
+.shape-2 {
+    width: 12rem;
+    height: 12rem;
+    right: 25rem;
+    top: 25rem;
+    background-color: rgb(170, 150, 123);
+}
+.shape-3 {
+    width: 10rem;
+    height: 10rem;
+    left: 25rem;
+    top: 20rem;
+    background-color: rgb(151, 117, 72);
+}
+.shape-4 {
+    width: 7rem;
+    height: 7rem;
+    right: 28rem;
+    top: 7rem;
+    background-color: rgb(107, 64, 7);
+}
+.shape-5 {
+    width: 17rem;
+    height: 17rem;
+    right: .5rem;
+    top: 5rem;
+    background-color: rgb(161, 117, 60);
+}
+.shape-6 {
+    width: 15rem;
+    height: 15rem;
+    left: 1rem;
+    top: 20rem;
+    background-color: rgb(224, 172, 108);
+}
+.singUp-Form {
+    display: none;
+}
