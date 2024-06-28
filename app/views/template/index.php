@@ -1,11 +1,14 @@
+<?php
+require_once "../../core/init.php";
+?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groot Store</title>
+    <title> <?= SITE_TITEL ?> </title>
 </head>
 <body>
     <div>
@@ -16,11 +19,14 @@
                         دست‌سازه‌های گرووت
                     </h1>
                         <input type="search" class="product-Search-Input" placeholder="جست و جوی محصولات">
-                        <button type="submit" class="search-Btn"><img src="../assets/img/icon/search-icon.png" alt=""></button>
+                        <button type="submit" class="search-Btn"><img src="<?= ROOT ?>/assets/img/icon/search-icon.png" alt=""></button>
                 </div>
                 <div class="left-Header">
-                   <div class="login-Singup-Container"> <a href="#" class="login">ورود</a> | <a class="singup" href="#">ثبت نام</a></div>
-                   <button class="cart-Btn"><img src="../assets/img/icon/card-Icon.png" alt=""></button>
+                   <div class="login-Singup-Container"> 
+                        <a class="login" href="../login-singup.php">ورود</a> / 
+                        <a class="singup" href="#">ثبت نام</a>
+                    </div>
+                   <button class="cart-Btn"><img src="<?= ROOT ?>/assets/img/icon/card-Icon.png" alt=""></button>
                 </div>
             </div>
             <div class="bottom-Header-Container">
@@ -54,12 +60,12 @@
     </div>
     <div id="body-Container">
         <div class="baner-Container">
-            <img class="baner-Img" src="../assets/img/baner/baner1.png" alt="">
+            <img class="baner-Img" src="<?= ROOT ?>/assets/img/baner/baner1.png" alt="">
         </div>
         <div id="products-Categorization-Container">
             <span class="products-Categorization-Title">دسته بندی محصولات</span>
         </div>
     </div>
 </body>
-<script src="../assets/js/index.js"></script>
+<script src="<?= ROOT ?>/assets/js/index.js"></script>
 </html>
