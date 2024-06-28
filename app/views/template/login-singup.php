@@ -1,3 +1,6 @@
+<?php
+require_once "../../core/init.php";
+?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
