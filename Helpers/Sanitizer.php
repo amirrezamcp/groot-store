@@ -1,5 +1,5 @@
 <?php
-namespace Trait\Sanitizer;
+namespace Helpers\Sanitizer;
 
 trait Sanitizer {
 
