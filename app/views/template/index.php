@@ -23,8 +23,8 @@ require_once "../../core/init.php";
                 </div>
                 <div class="left-Header">
                    <div class="login-Singup-Container"> 
-                        <a class="login" href="../login-singup.php">ورود</a> / 
-                        <a class="singup" href="#">ثبت نام</a>
+                        <a class="login" href="./login-singup.php">ورود / ثبت نام</a>
+
                     </div>
                    <button class="cart-Btn"><img src="<?= ROOT ?>/assets/img/icon/card-Icon.png" alt=""></button>
                 </div>
