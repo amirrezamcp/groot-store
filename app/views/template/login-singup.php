@@ -23,8 +23,8 @@
             <input type="text" class="user-Name-Input input" placeholder="نام کاربری">
             <input type="password" class="password-Input input" placeholder="رمز عبور">
             <span class="span form-Span"><a class="span-Link singUp-Page" href="#">حساب کاربری ندارید؟ (ثبت نام کنید)</a></span>
-            <button class="login-Btn btn"><a href="#">ورود</a></button>
-            <button class="cancle-Btn btn"><a href="./index.php">بازگشت</a></button>
+            <button class="login-Btn btn"><a class="login-Link" href="#">ورود</a></button>
+            <button class="cancle-Btn btn"><a class="index-Link" href="./index.php">بازگشت</a></button>
         </form>
 
         <form action="#" class="form singUp-Form">
@@ -34,8 +34,8 @@
             <input type="password" class="password-Input input" placeholder="رمز عبور">
             <input type="password" class="repet-Password-Input input" placeholder="تکرار رمز عبور">
             <span class="span form-Span"><a class="span-Link login-Page" href="#">حساب کاربری دارید؟ (وارد شوید)</a></span>
-            <button class="singUp-Btn btn"><a href="#">ثبت نام</a></button>
-            <button class="cancle-Btn btn"><a href="./index.php">بازگشت</a></button>
+            <button class="singUp-Btn btn"><a class="singUp-Link" href="#">ثبت نام</a></button>
+            <button class="cancle-Btn btn"><a class="index-Link" href="./index.php">بازگشت</a></button>
         </form>
     </div>
 </body>
