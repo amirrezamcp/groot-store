@@ -21,21 +21,21 @@ require_once "../../core/init.php";
         <div class="shapes shape-5"></div>
         <div class="shapes shape-6"></div>
 
-        <form action="#" class="form login-Form">
+        <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form login-Form" method="post">
             <h2 class="form-Title">ورود</h2>
-            <input type="text" class="user-Name-Input input" placeholder="نام کاربری">
-            <input type="password" class="password-Input input" placeholder="رمز عبور">
+            <input name="frm[email]" type="text" class="user-Name-Input input" placeholder="نام کاربری">
+            <input name="frm[email]" type="password" class="password-Input input" placeholder="رمز عبور">
             <span class="span form-Span"><a class="span-Link singUp-Page" href="#">حساب کاربری ندارید؟ (ثبت نام کنید)</a></span>
             <button class="login-Btn btn"><a class="login-Link" href="#">ورود</a></button>
             <button class="cancle-Btn btn"><a class="index-Link" href="./index.php">بازگشت</a></button>
         </form>
 
-        <form action="#" class="form singUp-Form">
+        <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form singUp-Form" method="post">
             <h2 class="form-Title">ثبت نام</h2>
-            <input type="text" class="user-Name-Input input" placeholder="نام کاربری">
-            <input type="text" class="phone-Number-Input input" placeholder="شماره تماس">
-            <input type="password" class="password-Input input" placeholder="رمز عبور">
-            <input type="password" class="repet-Password-Input input" placeholder="تکرار رمز عبور">
+            <input name="frm[username]" type="text" class="user-Name-Input input" placeholder="نام کاربری">
+            <input name="frm[phoneNumber]" type="text" class="phone-Number-Input input" placeholder="شماره تماس">
+            <input name="frm[password]" type="password" class="password-Input input" placeholder="رمز عبور">
+            <input name="frm[confirm_password]" type="password" class="repet-Password-Input input" placeholder="تکرار رمز عبور">
             <span class="span form-Span"><a class="span-Link login-Page" href="#">حساب کاربری دارید؟ (وارد شوید)</a></span>
             <button class="singUp-Btn btn"><a class="singUp-Link" href="#">ثبت نام</a></button>
             <button class="cancle-Btn btn"><a class="index-Link" href="./index.php">بازگشت</a></button>
