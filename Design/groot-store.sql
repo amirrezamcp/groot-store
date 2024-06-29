@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2024 at 09:18 PM
+-- Generation Time: Jun 29, 2024 at 06:08 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -111,13 +111,11 @@ CREATE TABLE `tokens` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `firstname` varchar(256) NOT NULL,
-  `lastname` varchar(256) NOT NULL,
+  `userName` varchar(256) NOT NULL,
   `email` varchar(256) DEFAULT NULL,
   `password` varchar(256) NOT NULL,
-  `sex` enum('F','M') DEFAULT NULL,
   `phone_number` varchar(11) NOT NULL,
-  `adderse_id` int(11) NOT NULL,
+  `adderse_id` int(11) DEFAULT NULL,
   `is_email_verified` enum('0','1') NOT NULL DEFAULT '0',
   `created_at` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -126,8 +124,16 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `sex`, `phone_number`, `adderse_id`, `is_email_verified`, `created_at`) VALUES
-(8, 'aaa', 'aaaa', 'aaaa@gmail.com', '123', 'M', '09111111111', 1, '0', '2024-05-18 20:06:32');
+INSERT INTO `users` (`id`, `userName`, `email`, `password`, `phone_number`, `adderse_id`, `is_email_verified`, `created_at`) VALUES
+(1, 'amir', NULL, 'aa', '030303', NULL, '0', '2024-06-29 13:54:15'),
+(2, 'amir', NULL, '11', '66', NULL, '0', '2024-06-29 14:04:02'),
+(3, 'dfd', NULL, 'asas', 'sas', NULL, '0', '2024-06-29 14:07:41'),
+(4, 'aaa', NULL, 'ddd', 'sss', NULL, '0', '2024-06-29 14:08:10'),
+(5, 'amirreza', NULL, 'aaa', '09117055505', NULL, '0', '2024-06-29 14:10:38'),
+(8, 'aaa', 'aaaa@gmail.com', '123', '09111111111', 1, '0', '2024-05-18 20:06:32'),
+(10, 'amir', 'amir@gmail.com', 'aaaaa', '09119874562', 1, '0', '2024-06-29 12:34:02'),
+(11, 'aboli', NULL, 'ss', '999999', NULL, '0', '2024-06-29 18:36:35'),
+(12, 'amir', NULL, '$2y$10$0x.Scy9ONPdNJugoNVQlc.uHTThNT9/knmYcUA8z4SXsF.DenpKea', 'sfd', NULL, '0', '2024-06-29 19:30:24');
 
 --
 -- Indexes for dumped tables
@@ -216,7 +222,7 @@ ALTER TABLE `tokens`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
