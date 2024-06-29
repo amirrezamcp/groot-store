@@ -1,13 +1,12 @@
 <?php
-namespace Helpers\Sanitizer;
+namespace Helpers;
 
 trait Sanitizer {
-
     public static function sanitizeInput($input) {
         if(is_array($input)) {
-            return array_map([self::class, 'sanitize'], $input);
-        }else{
-            return self::sanitize($input);
+            return array_map([self::class, 'sanitizeValue'], $input);
+        } else {
+            return self::sanitizeValue($input);
         }
     }
 
