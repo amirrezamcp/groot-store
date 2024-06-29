@@ -8,6 +8,8 @@ function ClassAutoloader($className) {
 
     if(file_exists($filePath)) {
         include_once($filePath);
+    }else {
+        echo "$className وجود ندارد";
     }
 }
 
