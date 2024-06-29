@@ -1,10 +1,6 @@
 <?php
-namespace core\Database;
 
 require_once "init.php";
-
-use PDO;
-use PDOException;
 
 class Database {
     private $dsn = "mysql:host=". HOST . "; dbname=" . DB;
@@ -21,19 +17,5 @@ class Database {
 
     public function __destruct() {
         $this->connection = null;
-    }
-
-    protected function executeStatement($sql, $params = []) {
-        $stmt = $this->connection->prepare($sql);
-        if (!$stmt) {
-            die("Error : " . $this->connection->errorInfo()[2]);
-        }
-        if (!empty($params)) {
-            foreach ($params as $key => $value) {
-                $stmt->bindValue(":$key", $value);
-            }
-        }
-        $stmt->execute();
-        return $stmt;
     }
 }
