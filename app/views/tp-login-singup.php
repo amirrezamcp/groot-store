@@ -1,6 +1,7 @@
 <?php
 
 use Helpers\CsrfToken;
+use Helpers\Semej;
 
 ?>
 <!DOCTYPE html>
@@ -46,4 +47,7 @@ use Helpers\CsrfToken;
     </div>
 </body>
     <script src="<?= ROOT ?>assets/js/login-singup/login-singup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="<?= ROOT ?>assets/js/semej.js"></script>
+    <?php Semej::alert(); ?>
 </html>

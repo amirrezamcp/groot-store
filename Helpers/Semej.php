@@ -1,5 +1,5 @@
 <?php declare(strict_types=1); // strict requirement
-namespace Helpers\Semej;
+namespace Helpers;
 
 class Semej {
     // declare domain name
