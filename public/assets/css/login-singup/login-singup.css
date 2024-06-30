@@ -44,7 +44,7 @@ html {
     text-align: right;
     font-size: .8rem;
 }
-.span-Link, .singUp-Link , .login-Link {
+a {
     color: #494949;
     text-decoration: none;
 }
