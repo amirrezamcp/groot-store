@@ -8,9 +8,7 @@ if(isset($_POST['csrf_token']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $authUser = new AuthUser();
     $authUser->register($csrf_token, $data);
-
-}else {
-    echo "not register";
+    $authUser->validatePhoneNumber($data);
 }
 
 require_once "./app/views/tp-login-singup.php";
