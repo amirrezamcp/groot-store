@@ -3,6 +3,8 @@
 use Helpers\CsrfToken;
 use Helpers\Semej;
 
+$generate_csrfToken = CsrfToken::generate();
+
 ?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -26,16 +28,17 @@ use Helpers\Semej;
 
         <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form login-Form" method="post">
             <h2 class="form-Title">ورود</h2>
-            <input name="frm[email]" type="text" class="user-Name-Input input" placeholder="نام کاربری">
-            <input name="frm[email]" type="password" class="password-Input input" placeholder="رمز عبور">
+            <input name="csrf_token" type="hidden" value="<?= $generate_csrfToken ?>">
+            <input name="frm[username]" type="text" class="user-Name-Input input" placeholder="نام کاربری">
+            <input name="frm[password]" type="password" class="password-Input input" placeholder="رمز عبور">
             <span class="span form-Span"><a class="span-Link singUp-Page" href="#">حساب کاربری ندارید؟ (ثبت نام کنید)</a></span>
-            <button class="login-Btn btn"><a class="login-Link" href="#">ورود</a></button>
+            <button name="login_btn" type="submit" value="Register" class="login-Btn btn"><a class="login-Link" href="#">ورود</a></button>
             <button class="cancle-Btn btn"><a class="index-Link" href="./index.php">بازگشت</a></button>
         </form>
 
         <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form singUp-Form" method="post">
             <h2 class="form-Title">ثبت نام</h2>
-            <input name="csrf_token" type="hidden" value="<?= CsrfToken::generate() ?>">
+            <input name="csrf_token" type="hidden" value="<?= $generate_csrfToken ?>">
             <input name="frm[username]" type="text" class="user-Name-Input input" placeholder="نام کاربری">
             <input name="frm[phoneNumber]" type="text" class="phone-Number-Input input" placeholder="شماره تماس">
             <input name="frm[password]" type="password" class="password-Input input" placeholder="رمز عبور">
