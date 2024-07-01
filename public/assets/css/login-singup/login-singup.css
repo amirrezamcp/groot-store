@@ -38,7 +38,14 @@ html {
     border-bottom: 2px #494949 solid ;
     width: 21rem;
 }
-
+.eye-Icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 3rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+}
 .form-Span{
     width: 20rem;
     text-align: right;
