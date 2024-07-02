@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../font/Vazir.ttf);
+}
+@font-face {
+    font-family: 'CoopBl';
+    src: url(../font/COOPBL.TTF);
+}
+
+html {
+    background-color: rgb(253, 247, 191);
+    font-family: 'vazir';
+}
+.eyes-Container {
+    width: 50%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.eye {
+    width: 10rem;
+    height: 10rem;
+    border: black solid .3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    margin: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pupil-Out {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background-color: #000;
+    box-shadow: inset -5px 10px 7px rgb(51, 51, 51);
+}
+.pupil-In {
+    width: 1rem;
+    height: 1rem;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    position: absolute;
+}
+
+/* error box */
+.error-Box-Container {
+    width: 95%;
+    height: 30rem;
+    position: absolute;
+    top: 0rem;
+}
+.error-Box {
+    width: 60%;
+    height: 26rem;
+    background-color: rgb(80, 46, 1);
+    position: relative;
+    z-index: 2;
+    top: 11rem;
+    right: 18rem;
+    transform: rotate(-5deg);
+    border-radius: 1rem;
+}
+.hand {
+    display: flex;
+    width: 12rem;
+    height: 7rem;
+    position: absolute;
+}
+.fingers {
+    width: 4rem;
+    background-color: aliceblue;
+    border: solid #000 3px;
+    border-radius: 1.8rem;
+    position: absolute;
+}
+.finger-1 {
+    height: 7rem;
+    left: -.5rem;
+    transform: rotate(-5deg);
+}
+.finger-2 {
+    height: 9rem;
+    left: 3.5rem;
+    transform: rotate(3deg);
+    z-index: 3;
+}
+.finger-3 {
+    height: 8rem;
+    left: 7.8rem;
+    transform: rotate(-1deg);
+}
+.left-Hand {
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+}
+.right-Hand {
+    position: absolute;
+    right: -5rem;
+    top: 7rem;
+    transform: rotate(90deg);
+}
+
+/* error text */
+.text-Container {
+    width: 100%;
+    height: 24rem;
+    position: absolute;
+    top: 2rem;
+    z-index: 4;
+    text-align: center;
+    transform: rotate(0deg);
+    color: rgb(253, 247, 191);
+    text-shadow:  5px 5px 15px rgb(168, 164, 123);
+}
+.error-Title {
+    font-size: 10rem;
+    margin: 2rem 0 2rem 0;
+    font-family: 'CoopBl';
+}
+.error-Description {
+    font-size: 1.5rem;
+}
