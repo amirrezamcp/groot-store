@@ -14,4 +14,5 @@ require_once "./Helpers/Semej.php";
 /**
  * Models class
  */
-require_once "./app/models/AuthUser.php";
+require_once "./app/models/Register.php";
+require_once "./app/models/Login.php";
