@@ -9,7 +9,7 @@ function productsCategoryAdd (imgAddress, title) {
 
     let productImg = $.createElement('img')
     productImg.className = 'category-Img'
-    productImg.setAttribute('src', '../assets/img/product/'+ imgAddress +'.jpg')
+    productImg.setAttribute('src', '<?= ROOT ?>/assets/img/product/'+ imgAddress +'.jpg')
     productImg.setAttribute('alt', 'category-img')
 
     let productTitle = $.createElement('h3')
