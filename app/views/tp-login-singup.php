@@ -59,7 +59,7 @@ $generate_csrfToken = CsrfToken::generate();
     </div>
 </body>
     <script src="<?= ROOT ?>assets/js/login-singup/login-singup.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <!-- <script src="<?= ROOT ?>assets/js/semej.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="<?= ROOT ?>assets/js/semej.js"></script>
     <?php Semej::alert(); ?>
 </html>
